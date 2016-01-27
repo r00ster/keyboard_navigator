@@ -4,7 +4,7 @@
         var idx = 0;
         var distance;
 
-        // Allow moving up/down from current element in view
+        // Allow moving up/down between elements from current scroll position 
         $(window).bind('scroll', function() {
             $elements.each(function() {
                 var $elem = $(this);
@@ -29,8 +29,8 @@
                 // right arrow
                 e.preventDefault();
                 if(idx < ($elements.length)) {
-                    var nextIdx = distance < 1 ? 1 : 0;
-                    var $next = $elements.eq(idx + nextIdx);
+                    var nextPos = distance < 1 ? 1 : 0;
+                    var $next = $elements.eq(idx + nextPos);
                     var topOffset = $next.offset().top;
                     $(window).scrollTop(topOffset);
                 }
