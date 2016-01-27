@@ -1,6 +1,6 @@
 # Keboard Navigator
 
-Simple jQuery plugin that allows users to navigate between elements on a page with keyboards shortcuts.
+Simple jQuery plugin that allows users to navigate between elements on a page with keyboard shortcuts.
 
 ## Requirements (included)
 
